@@ -24,8 +24,8 @@ jobs:
         run: dotnet restore ../Mediator/Mediator.sln
 
       - name: Build
-        run: dotnet build ../../Mediator/Mediator.sln --configyration Release --no-restore
+        run: dotnet build ../Mediator/Mediator.sln --configyration Release --no-restore
 
       - name: Publish
-        run: dotnet publish ../../Mediator/Mediator.sln --configuration Release --no-build
+        run: dotnet publish ../Mediator/Mediator.sln --configuration Release --no-build
   
