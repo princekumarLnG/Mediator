@@ -21,7 +21,7 @@ jobs:
           dotnet-version: '6.0.x'
 
       - name: Restore
-        run: dotnet restore ../../Mediator/Mediator.sln
+        run: dotnet restore ../Mediator/Mediator.sln
 
       - name: Build
         run: dotnet build ../../Mediator/Mediator.sln --configyration Release --no-restore
