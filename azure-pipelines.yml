@@ -12,7 +12,9 @@ stages:
     jobs:
       - job: A1
       - job: A2
+      
   - stage: stageB
+    dependsOn: stageB
     jobs:
       - job: B1
       - job: B2
