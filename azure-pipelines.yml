@@ -1,0 +1,18 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+
+
+pool: my-pool
+stages:
+  - stage: stageA
+    displayName: This is stage->A
+    jobs:
+      - job: A1
+      - job: A2
+  - stage: stageB
+    jobs:
+      - job: B1
+      - job: B2
