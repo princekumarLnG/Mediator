@@ -7,13 +7,12 @@
 
 pool:
   name: agent
-  vmImage: ubuntu-latest
+  vmImage: 'windows-latest'
 
 jobs:
   - job: jobA
-    dependsOn: agent
+    
   
-  - job: jobB
      
 
 
