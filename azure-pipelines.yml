@@ -9,11 +9,10 @@ pool:
   name: agent
   vmImage: ubuntu-latest
 
-jobs:
-  - job: jobA
-    dependsOn: agent
-  
-  - job: jobB
+steps:
+  - script: echo "hello world!"
+    displayName:  One-line script  
+
      
 
 
