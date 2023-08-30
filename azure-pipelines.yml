@@ -5,15 +5,13 @@
 
 
 
-pool: 
+pool:
+  name: agent
   vmImage: ubuntu-latest
 
-stages:
-
-  - stage: stageA
-    displayName: This is stage->A
-    jobs:
-      - job: A1
+jobs:
+  - job: jobA
+    dependsOn: agent
      
 
 
