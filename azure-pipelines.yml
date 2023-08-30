@@ -5,7 +5,8 @@
 
 
 
-pool: my-pool
+pool: 
+  vmImage: ubuntu-latest
 
 stages:
   - stage: stageA
