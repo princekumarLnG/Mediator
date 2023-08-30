@@ -12,6 +12,8 @@ pool:
 jobs:
   - job: jobA
     dependsOn: agent
+  
+  - job: jobB
      
 
 
