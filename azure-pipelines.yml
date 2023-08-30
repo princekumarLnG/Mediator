@@ -13,23 +13,6 @@ stages:
     displayName: This is stage->A
     jobs:
       - job: A1
-      - job: A2
+     
 
-  - stage: stageB    
-    jobs:
-      - job: B1
-      - job: B2
 
-  - stage: stageC 
-    dependsOn: stageA   
-    jobs:
-      - job: C1
-      - job: C2
-
-  - stage: stageD 
-    dependsOn:
-      - stageB
-      - stageC   
-    jobs:
-      - job: D1
-      - job: D2
