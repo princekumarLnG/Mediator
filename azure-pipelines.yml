@@ -19,15 +19,13 @@ jobs:
     
     - task: NuGetCommand@2
       inputs:
-        restoreSolution: '$(solution)'
-    
-    
+        restoreSolution: '$(solution)'    
 
     - task: SonarQubePrepare@5
       inputs:
         SonarQube: 'SonarServiceConnection'
         scannerMode: 'MSBuild'
-        projectKey: 'SonarQubeProj_SonarQubeProj_AYqR1lgpDQy9B6N24lJI'
+        projectKey: 'MediatorProject_MediatorProject_AYqSCmyxDQy9B6N24lJV'
     - task: VSBuild@1
       inputs:
         solution: '$(solution)'
