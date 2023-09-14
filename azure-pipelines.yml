@@ -5,8 +5,7 @@
 
 
 
-pool:  
-  vmImage: ubuntu-latest
+pool:  my-pool
 
 steps:
   - script: echo "hello world!"
